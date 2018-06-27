@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Calendar Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="CalPage.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="calendar-container">
+            <div class="calendar-head">
+                <div id="month-label"></div>
+            </div>
+            <div class="calendar-body">
+                <div id="day-label"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        CalPage.get.monthLabelElement().innerHTML = CalPage.get.currentMonth();
+        CalPage.get.dayLabelElement().innerHTML = CalPage.get.currentDayOfMonth();
+    </script>
+</body>
+
+</html>
